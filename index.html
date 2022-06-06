@@ -9,9 +9,9 @@
 <body>
     <div id="app">
 
-        <div>
+        <div v-if="email.length == 10">
            <ul>
-               <li v-for="(nostraEmail, i) in email" :key="i" v-if="email.length == 10">
+               <li v-for="(nostraEmail, i) in email" :key="i">
                    {{nostraEmail}}
                </li>
            </ul>
