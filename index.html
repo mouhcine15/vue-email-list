@@ -11,7 +11,7 @@
 
         <div>
            <ul>
-               <li v-for="(nostraEmail, i) in email" :key="i">
+               <li v-for="(nostraEmail, i) in email" :key="i" v-if="email.length == 10">
                    {{nostraEmail}}
                </li>
            </ul>
