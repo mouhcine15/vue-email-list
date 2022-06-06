@@ -1,7 +1,7 @@
 const app = new Vue ({
     el: "#app",
     data: {
-        email: [ ]
+        email: []
     },
     mounted() {
         for (let i = 0; i < 10; i++) {
@@ -9,7 +9,7 @@ const app = new Vue ({
             .then((result) => {
                 const risultato = result.data.response;
                 console.log(risultato);
-                email.push(risultato)
+                this.email.push(risultato)
             });
             
         }
